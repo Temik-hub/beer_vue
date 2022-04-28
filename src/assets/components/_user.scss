@@ -1,0 +1,59 @@
+.user__container {
+  padding: 20px;
+  @media (max-width:900px) {
+    padding: 10px;
+  }
+}
+.user__card {
+  @include centering;
+  padding: 20px;
+  max-width: 400px;
+  min-width: 275px;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 1px solid rgb(199, 199, 199);
+  background: $primary-white;
+  @media (max-width:900px) {
+    padding: 10px;
+  }
+}
+.user__image {
+  @include centering;
+  padding-bottom: 20px;
+  max-width: 300px;
+  min-height: 300px;
+  width: 100%;
+}
+.user__photo {
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (max-width: 480px) {
+    max-width: 220px;
+  }
+}
+.user__data {
+  @include centering;
+  flex-direction: column;
+  padding: 10px;
+}
+.user__name {
+  padding-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  color: $secondary-black;
+}
+.user__age {
+  padding-bottom: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  color: $secondary-grey;
+}
+.user__employment {
+  padding-bottom: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  color: $secondary-grey;
+}

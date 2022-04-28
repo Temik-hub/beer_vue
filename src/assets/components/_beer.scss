@@ -1,0 +1,99 @@
+.beer__container {
+  padding: 20px;
+  @media (max-width:900px) {
+    padding: 10px;
+  }
+}
+.beer__card {
+  @include centering;
+  flex-direction: column;
+  padding: 40px;
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 8px;
+  background: $primary-white;
+  @media (max-width:900px) {
+    padding: 30px;
+  }
+}
+.beer__heading {
+  padding-bottom: 20px;
+  font-size: 36px;
+  color: $primary-blue;
+  text-transform: uppercase;
+  @media (max-width: 480px) {
+    font-size: 22px;
+  }
+}
+.beer__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.beer__title {
+  padding-bottom: 20px;
+  font-size: 25px;
+  color: $secondary-grey;
+  white-space: wrap;
+  text-align: center;
+  text-transform: uppercase;
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
+}
+.beer__features-table {
+  max-width: 600px;
+  width: 100%;
+  table-layout: fixed;
+  margin-bottom: 40px;
+}
+.beer__caption {
+  display: none;
+}
+
+.beer__table-body {
+  padding: 10px;
+  text-transform: uppercase;
+}
+.beer__table-row {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+.beer__table-data {
+  font-size: 17px;
+  color: $primary-grey;
+  white-space: nowrap;
+  &:first-child {
+    margin-right: 20px;
+  }
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
+}
+.beer__button {
+  cursor: pointer;
+  padding: 12px;
+  margin: 0 30px;
+  align-self: end;
+  font-size: 20px;
+  font-weight: 500;
+  color: $primary-white;
+  border: none;
+  border-radius: 8px;
+  background-color: $primary-blue;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: $secondary-blue;
+  }
+  &:active {
+    background: $dark-blue;
+    transition: none;
+  }
+  @media (max-width:900px) {
+    margin: 0;
+    font-size: 16px;
+    align-self: center;
+  }
+}
