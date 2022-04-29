@@ -6,7 +6,7 @@
         </div>
         <div class="user__data">
           <h3 class="user__name">{{user.first_name}}</h3>
-          <p class="user__age">{{currentDate()}} y.o.</p>
+          <p class="user__age">{{getFullYears()}} y.o.</p>
           <p class="user__employment">{{user.employment.title}}
             ({{user.employment.key_skill}})
           </p>
@@ -33,7 +33,7 @@ export default {
         .then(response => response.json())
         .then(json => this.user = json)
     },
-    currentDate: function () {
+    getFullYears: function () {
       const d = new Date(this.user.date_of_birth);
       const now = new Date()
       const addOne = now.getMonth() - d.getMonth() >= 0 && now.getDate() - d.getDate() >= 0
