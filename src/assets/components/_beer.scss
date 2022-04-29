@@ -31,6 +31,8 @@
   align-items: center;
 }
 .beer__title {
+  max-width: 596px;
+  min-height: 100px;
   padding-bottom: 20px;
   font-size: 25px;
   color: $secondary-grey;
